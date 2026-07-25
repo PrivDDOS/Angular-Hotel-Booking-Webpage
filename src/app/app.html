@@ -15,35 +15,35 @@
         <div class="flex flex-col pt-10 w-full color-[var(--color-brown)]">
             <button class="flex w-full cursor-pointer">
                 <img src="./images/icon-bed.svg" alt="icon-bed">
-                <p class="pl-3 font-semibold">Your stay</p>
+                <p class="pl-3 font-semibold text-xs">Your stay</p>
                 <div class="bg-[var(--color-terracotta)] text-[var(--color-white)] rounded-full ml-auto w-[23px]">
                     1
                 </div>
             </button>
             <button class="flex w-full mt-6 cursor-pointer">
                 <img src="./images/icon-house.svg" alt="icon-house">
-                <p class="pl-3 font-semibold">The house</p>
+                <p class="pl-3 font-semibold text-xs">The house</p>
                 <!--<div class="bg-[var(--color-terracotta)] text-[var(--color-white)] rounded-full ml-auto w-[23px]">
                     1
                 </div> -->
             </button>
             <button class="flex w-full mt-6 cursor-pointer">
                 <img src="./images/icon-pin.svg" alt="icon-pin">
-                <p class="pl-3 font-semibold">Around town</p>
+                <p class="pl-3 font-semibold text-xs">Around town</p>
                 <!--<div class="bg-[var(--color-terracotta)] text-[var(--color-white)] rounded-full ml-auto w-[23px]">
                     1
                 </div> -->
             </button>
             <button class="flex w-full mt-6 cursor-pointer">
                 <img src="./images/icon-breakfast-outline.svg" alt="icon-breakfast">
-                <p class="pl-3 font-semibold">Breakfast</p>
+                <p class="pl-3 font-semibold text-xs">Breakfast</p>
                 <!--<div class="bg-[var(--color-terracotta)] text-[var(--color-white)] rounded-full ml-auto w-[23px]">
                     1
                 </div> -->
             </button>
             <button class="flex w-full mt-6 cursor-pointer">
                 <img src="./images/icon-mail.svg" alt="icon-mail">
-                <p class="pl-3 font-semibold">Messages</p>
+                <p class="pl-3 font-semibold text-xs">Messages</p>
                 <!--<div class="bg-[var(--color-terracotta)] text-[var(--color-white)] rounded-full ml-auto w-[23px]">
                     1
                 </div> -->
@@ -53,9 +53,9 @@
         <div class="flex flex-col mt-auto">
             <div class="flex w-[100%] h-full bg-[var(--color-yellow)] rounded-xl mb-[20px] overflow-hidden py-3 ps-2">
                 <div class="flex flex-col w-[70%] mt-2">
-                    <p class="fw-thin text-xs uppercase">Today in Cassis</p>
-                    <h3 class="font-[Fraunces] font-medium fw-medium text-[40px]">27°</h3>
-                    <p class="fw-thin text-xs">Sunny • <span class="fw-thin text-xs">light breeze</span></p>
+                    <p class="font-thin text-xs uppercase">Today in Cassis</p>
+                    <h3 class="font-fraunces font-semibold text-[40px]">27°</h3>
+                    <p class="font-thin text-xs">Sunny • <span class="font-thin text-xs">light breeze</span></p>
                 </div>
                 <div class="w-[30%] relative overflow-hidden">
                     <img src="./images/icon-weather.svg" alt="weather-icon" class="absolute top-[-26px] left-[6px] object-cover">
@@ -63,12 +63,28 @@
             </div>
 
             <div class="flex flex-col mb-[20px]">
-                <p class="uppercase fw-thin text-xs">Est 1987</p>
-                <p class="uppercase fw-thin text-xs">Maison Soleil • 12 RUE DES Oliviers • Cassis</p>
-                <p class="uppercase fw-thin text-xs">© 2026 Maison Soleil</p>
+                <p class="uppercase font-thin text-xs">Est 1987</p>
+                <p class="uppercase font-thin text-xs">Maison Soleil • 12 RUE DES Oliviers • Cassis</p>
+                <p class="uppercase font-thin text-xs">© 2026 Maison Soleil</p>
             </div>
         </div>
+    </div>
 
+    <div class="w-[85%] flex md:flex-col flex-row px-14 pt-4 pb-6">
+        <div class="flex md:flex-col flex-row">
+            <div>
+                <p class="font-mono font-thin uppercase text-[14px]">Booking Confirmed</p>
+            </div>
+            <div class="flex pt-2">
+                <h1 class="text-4xl font-fraunces font-bold">Bienvenue, <span class="text-[var(--color-terracotta)]">Lucia.</span></h1>
+
+                <div class="flex flex-row ms-auto">
+                    <button class="w-[140px] h-[40px] bg-[var(--color-white)] text-[var(--color-black)] text-xs font-medium rounded-4xl me-2">Print receipt</button>
+                    <button class="w-[140px] h-[40px] bg-[var(--color-black)] text-[var(--color-white)] text-xs font-medium rounded-4xl ms-2">Add to calender</button>
+                </div>
+            </div>
+
+        </div>
     </div>
 </main>
 
