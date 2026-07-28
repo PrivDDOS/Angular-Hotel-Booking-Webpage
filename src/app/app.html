@@ -71,6 +71,7 @@
     </div>
 
     <div class="w-[85%] flex md:flex-col flex-row px-14 pt-4 pb-6">
+
         <div class="flex md:flex-col flex-row">
             <div>
                 <p class="font-mono font-thin uppercase text-[14px]">Booking Confirmed</p>
@@ -83,8 +84,41 @@
                     <button class="w-[140px] h-[40px] bg-[var(--color-black)] text-[var(--color-white)] text-xs font-medium rounded-4xl ms-2">Add to calender</button>
                 </div>
             </div>
+        </div>
+
+        <div class="flex items-end justify-center h-48 group">
+            <!-- Item 1 (Left Fan) -->
+            <div 
+            class="flex flex-col h-32 bg-[var(--color-white)]
+            origin-bottom transition-all duration-300 transform 
+            group-hover:-rotate-45 group-hover:-translate-x-6 rounded-t-lg p-2">
+                <p class="font-mono font-thin uppercase text-[14px]">
+                    Receipt
+                </p>
+                <div class="flex">
+                    <h1>Your stay</h1>
+
+                    <div class="flex flex-row ms-auto">
+                        <p>No <span class="uppercase">ms - 2026</span></p>
+                        <p>0421 - AH</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Item 2 (Right Fan) -->
+            <div 
+            class="flex flex-col h-32 bg-[var(--color-terracotta)] text-[var(--color-white)] origin-bottom transition-all duration-300 transform 
+            group-hover:rotate-45 group-hover:translate-x-6 rounded-t-lg p-2">
+                <div class="flex">
+                    <p class="uppercase">welcome card</p>
+
+                    <img src="./images/icon-sun.svg" alt="sun icon">
+                </div>
+            </div>
 
         </div>
+
     </div>
 </main>
 
