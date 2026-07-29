@@ -86,34 +86,49 @@
             </div>
         </div>
 
-        <div class="flex items-end justify-center h-48 group">
+        <div class="flex items-center justify-center h-[60%] group">
             <!-- Item 1 (Left Fan) -->
             <div 
-            class="flex flex-col h-32 bg-[var(--color-white)]
+            class="flex flex-col w-[340px] h-auto bg-[var(--color-white)]
             origin-bottom transition-all duration-300 transform 
             group-hover:-rotate-45 group-hover:-translate-x-6 rounded-t-lg p-2">
-                <p class="font-mono font-thin uppercase text-[14px]">
+                <p class="font-mono font-thin uppercase text-[12px]">
                     Receipt
                 </p>
-                <div class="flex">
-                    <h1>Your stay</h1>
+                <div class="flex h-[30px]">
+                    <h1 class="font-fraunces font-bold text-lg">Your stay</h1>
 
-                    <div class="flex flex-row ms-auto">
+                    <div class="flex flex-col ms-auto text-xs font-thin">
                         <p>No <span class="uppercase">ms - 2026</span></p>
                         <p>0421 - AH</p>
                     </div>
                 </div>
+
+                <div class="flex items-center justify-around pt-6">
+                    <div class="flex flex-col items-center">
+                        <p class="font-mono font-thin uppercase text-[12px]">check in</p>
+                        <p class="font-fraunces font-medium text-3xl">25 <span class="font-mono font-medium">Apr</span></p>
+                        <p class="font-mono font-thin uppercase text-[12px]">Saturday - 15:00</p>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="font-mono font-thin uppercase text-[12px]">check out</p>
+                        <p class="font-fraunces font-medium text-3xl">29 <span class="font-mono font-medium">Apr</span></p>
+                        <p class="font-mono font-thin uppercase text-[12px]">Wednesday - 11:00</p>
+                    </div>
+                </div>
             </div>
-            
+
+            <img src="./images/illustration-sun.svg" alt="illustration sun" class="hidden">
             
             <!-- Item 2 (Right Fan) -->
             <div 
-            class="flex flex-col h-32 bg-[var(--color-terracotta)] text-[var(--color-white)] origin-bottom transition-all duration-300 transform 
-            group-hover:rotate-45 group-hover:translate-x-6 rounded-t-lg p-2">
+            class="flex flex-col w-[300px] h-auto bg-[var(--color-terracotta)] text-[var(--color-white)] origin-bottom transition-all duration-300 transform 
+            group-hover:rotate-45 group-hover:translate-x-6 rounded-t-lg py-6 px-4">
                 <div class="flex">
-                    <p class="uppercase">welcome card</p>
+                    <p class="font-mono font-thin uppercase text-[12px]">welcome card</p>
 
-                    <img src="./images/icon-sun.svg" alt="sun icon">
+                    <img src="./images/icon-sun.svg" alt="sun icon" class="ms-auto">
                 </div>
             </div>
 

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import 'tailwindcss';
 
 :root {
         --color-terracotta: hsl(15, 74%, 41%);
@@ -17,7 +17,6 @@
 .font-fraunces {
     font-family: var(--font-fraunces);
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: italic;
     font-variation-settings:
         "SOFT" 0,
@@ -26,6 +25,5 @@
 
 .font-mono {
     font-family: "DM Mono", monospace;
-    font-weight: 400;
     font-style: normal;
 }
