@@ -86,50 +86,73 @@
             </div>
         </div>
 
-        <div class="flex items-center justify-center h-[60%] group">
-            <!-- Item 1 (Left Fan) -->
-            <div 
-            class="flex flex-col w-[340px] h-auto bg-[var(--color-white)]
-            origin-bottom transition-all duration-300 transform 
-            group-hover:-rotate-45 group-hover:-translate-x-6 rounded-t-lg p-2">
-                <p class="font-mono font-thin uppercase text-[12px]">
-                    Receipt
-                </p>
-                <div class="flex h-[30px]">
-                    <h1 class="font-fraunces font-bold text-lg">Your stay</h1>
+        <div class="group relative w-[500px] h-[350px]">
 
-                    <div class="flex flex-col ms-auto text-xs font-thin">
-                        <p>No <span class="uppercase">ms - 2026</span></p>
-                        <p>0421 - AH</p>
+            <!-- Sun -->
+            <img
+                src="/images/illustration-sun.svg"
+                class="absolute left-1/2 top-1/2
+                    -translate-x-1/2 -translate-y-1/2
+                    z-0 transition-all duration-500
+                    group-hover:scale-110"
+            >
+
+            <!-- White Card -->
+            <div
+                class="absolute flex flex-col h-auto w-[340px] left-10 top-8
+                    z-10
+                    transition-all duration-500
+                    group-hover:-rotate-6
+                    group-hover:-translate-x-8 p-2">
+                <p class="font-mono font-thin uppercase text-[12px]">receipt</p>
+                <div class="flex flex-row">
+                    <p class="font-fraunces font-bold">Your stay</p>
+
+                    <div class="flex flex-col ms-auto">
+                        <p class="text-[12px] font-thin">No <span class="font-thin uppercase">ms - 2026</span></p>
+                        <p class="font-thin uppercase text-[12px]">0421 - ah</p>
                     </div>
                 </div>
 
-                <div class="flex items-center justify-around pt-6">
-                    <div class="flex flex-col items-center">
+                <div class="flex flex-row align-center justify-around pt-5">
+                    <div class="flex flex-col text-center">
                         <p class="font-mono font-thin uppercase text-[12px]">check in</p>
-                        <p class="font-fraunces font-medium text-3xl">25 <span class="font-mono font-medium">Apr</span></p>
-                        <p class="font-mono font-thin uppercase text-[12px]">Saturday - 15:00</p>
+                        <p class="font-fraunces font-medium text-4xl">25 <span class="text-4xl font-mono">Apr</span></p>
+                        <p class="font-mono font-thin uppercase text-[10px]">Saturday - 16:00</p>
                     </div>
 
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col text-center">
                         <p class="font-mono font-thin uppercase text-[12px]">check out</p>
-                        <p class="font-fraunces font-medium text-3xl">29 <span class="font-mono font-medium">Apr</span></p>
-                        <p class="font-mono font-thin uppercase text-[12px]">Wednesday - 11:00</p>
+                        <p class="font-fraunces font-medium text-4xl">29 <span class="text-4xl font-mono">Apr</span></p>
+                        <p class="font-mono font-thin uppercase text-[10px]">Wednesday - 11:00</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col pt-5">
+                    <div class="flex flex-row justify-between text-sm">
+                        <p>Room - La Garrigue * 4 nights</p>
+                        <p>€ <span class="font-mono">620.00</span></p>
+                    </div>
+
+                    <div class="flex flex-row justify-between text-sm pt-2">
+                        <p>Breakfast * 2 guests</p>
+                        <p>€ <span class="font-mono">96.00</span></p>
+                    </div>
+
+                    <div class="flex flex-row justify-between text-sm pt-2">
+                        <p>Tourist tax</p>
+                        <p>€ <span class="font-mono">14.00</span></p>
                     </div>
                 </div>
             </div>
 
-            <img src="./images/illustration-sun.svg" alt="illustration sun" class="hidden">
-            
-            <!-- Item 2 (Right Fan) -->
-            <div 
-            class="flex flex-col w-[300px] h-auto bg-[var(--color-terracotta)] text-[var(--color-white)] origin-bottom transition-all duration-300 transform 
-            group-hover:rotate-45 group-hover:translate-x-6 rounded-t-lg py-6 px-4">
-                <div class="flex">
-                    <p class="font-mono font-thin uppercase text-[12px]">welcome card</p>
-
-                    <img src="./images/icon-sun.svg" alt="sun icon" class="ms-auto">
-                </div>
+            <!-- Orange Card -->
+            <div
+                class="absolute h-auto w-[300px] bg-[var(--color-terracotta)] left-44 top-10
+                    z-20
+                    transition-all duration-500
+                    group-hover:rotate-6
+                    group-hover:translate-x-8">
             </div>
 
         </div>
