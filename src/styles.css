@@ -5,6 +5,7 @@
 
 :root {
         --color-terracotta: hsl(15, 74%, 41%);
+        --color-sun:hsl(45, 100%, 74%);
         --color-black: hsl(33, 22%, 20%);
         --color-brown: hsl(33, 17%, 41%);
         --color-yellow: hsl(44, 84%, 75%);
@@ -17,7 +18,6 @@
 .font-fraunces {
     font-family: var(--font-fraunces);
     font-optical-sizing: auto;
-    font-style: italic;
     font-variation-settings:
         "SOFT" 0,
         "WONK" 0;

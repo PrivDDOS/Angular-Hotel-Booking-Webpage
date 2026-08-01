@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <div class="w-[85%] flex md:flex-col flex-row px-14 pt-4 pb-6">
+    <div class="w-[85%] flex md:flex-col flex-row px-14 pt-4">
 
         <div class="flex md:flex-col flex-row">
             <div>
@@ -86,7 +86,7 @@
             </div>
         </div>
 
-        <div class="group relative w-[500px] h-[350px]">
+        <div class="group relative flex items-center w-full h-[400px] mt-4">
 
             <!-- Sun -->
             <img
@@ -99,7 +99,7 @@
 
             <!-- White Card -->
             <div
-                class="absolute flex flex-col h-auto w-[340px] left-10 top-8
+                class="absolute flex flex-col h-[380px] w-[400px] bg-[var(--color-white)] left-[18%] top-0
                     z-10
                     transition-all duration-500
                     group-hover:-rotate-6
@@ -114,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-row align-center justify-around pt-5">
+                <div class="flex flex-row items-center justify-around pt-5">
                     <div class="flex flex-col text-center">
                         <p class="font-mono font-thin uppercase text-[12px]">check in</p>
                         <p class="font-fraunces font-medium text-4xl">25 <span class="text-4xl font-mono">Apr</span></p>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col pt-5">
+                <div class="flex flex-col pt-5 pb-5">
                     <div class="flex flex-row justify-between text-sm">
                         <p>Room - La Garrigue * 4 nights</p>
                         <p>€ <span class="font-mono">620.00</span></p>
@@ -144,15 +144,48 @@
                         <p>€ <span class="font-mono">14.00</span></p>
                     </div>
                 </div>
+
+                <span class="border-1 w-full"></span>
+
+                <div class="flex flex-row pt-4">
+                    <p class="flex items-center font-mono font-thin uppercase text-[12px]">total paid</p>
+                    <div class="ms-auto">
+                        <p class="font-fraunces folt-medium text-[20px]">€ 730.40</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row pt-6">
+                    <p class="flex items-center font-mono font-thin uppercase text-[12px]">paid - wise - gbp</p>
+                    <div class="ms-auto">
+                        <img src="./images/icon-barcode.svg" alt="barcode">
+                    </div>
+                </div>
             </div>
 
             <!-- Orange Card -->
             <div
-                class="absolute h-auto w-[300px] bg-[var(--color-terracotta)] left-44 top-10
+                class="absolute flex flex-col w-[310px] h-[380px] bg-[var(--color-terracotta)] right-[26%] top-0
                     z-20
                     transition-all duration-500
                     group-hover:rotate-6
-                    group-hover:translate-x-8">
+                    group-hover:translate-x-8 pt-[20px] px-4 rounded-2xl">
+                    <div class="flex flex-row">
+                        <p class="font-mono font-thin uppercase text-[12px] text-[var(--color-sun)]">welcome card</p>
+                        <div class="ms-auto">
+                            <img src="./images/icon-sun.svg" alt="sun icon">
+                        </div>
+                    </div>
+
+                    <p class="font-fraunces font-light text-[20px] text-[var(--color-sun)] italic">A note from your host.</p>
+
+                    <p class="font-fraunces font-light text-[36px] text-[var(--color-white)] italic">Margaux.</p>
+
+                    <p class="font-thin text-[12px] text-[var(--color-sun)] pt-4">We're so glad you're coming. The shutters will be open the lemonade cold and the cat - Poivre - pretending not to notice you.</p>
+
+                    <div class="mt-auto pb-4">
+                        <p class="uppercase text-[var(--color-sun)] text-[8px]">room</p>
+                        <p class="text-[16px] text-[var(--color-white)]">La Garrigue</p>
+                    </div>
             </div>
 
         </div>
