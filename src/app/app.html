@@ -100,10 +100,10 @@
             <!-- White Card -->
             <div
                 class="absolute flex flex-col h-[380px] w-[400px] bg-[var(--color-white)] left-[18%] top-0
-                    z-10
+                    z-10 rotate-[-5deg]
                     transition-all duration-500
-                    group-hover:-rotate-6
-                    group-hover:-translate-x-8 p-2">
+                    group-hover:-rotate-[-4deg]
+                    group-hover:-translate-x-30 p-2">
                 <p class="font-mono font-thin uppercase text-[12px]">receipt</p>
                 <div class="flex flex-row">
                     <p class="font-fraunces font-bold">Your stay</p>
@@ -165,10 +165,10 @@
             <!-- Orange Card -->
             <div
                 class="absolute flex flex-col w-[310px] h-[380px] bg-[var(--color-terracotta)] right-[26%] top-0
-                    z-20
+                    z-20 rotate-[5deg]
                     transition-all duration-500
-                    group-hover:rotate-6
-                    group-hover:translate-x-8 pt-[20px] px-4 rounded-2xl">
+                    group-hover:rotate-[-4deg]
+                    group-hover:translate-x-30 pt-[20px] px-4 rounded-2xl">
                     <div class="flex flex-row">
                         <p class="font-mono font-thin uppercase text-[12px] text-[var(--color-sun)]">welcome card</p>
                         <div class="ms-auto">
@@ -188,6 +188,76 @@
                     </div>
             </div>
 
+        </div>
+
+        <div class="w-full flex justify-center items-center">
+            <img src="./images/icon-sparkle.svg" alt="sparkle" class="w-[10px]">
+            <p class="font-mono font-thin text-[10px] text-[var(--color-terracotta)] uppercase px-2">hover to fan</p>
+            <img src="./images/icon-sparkle.svg" alt="sparkle" class="w-[10px]">
+        </div>
+
+        <div class="flex flex-row justify-around">
+            <div class="w-80 flex flex-col bg-[var(--color-white)]">
+                <div class="flex items-center">
+                    <img src="./images/icon-key.svg" alt="house" class="w-[40px] bg-[var(--color-terracotta)] p-1 rounded">
+                    <p class="font-mono font-mono text-[var(--color-terracotta)] text-[12px] uppercase ps-2 tracking-wider">arrival</p>
+                    <div class="ms-auto">
+                        <p class="text-[var(--color-terracotta)] text-[20px]">01</p>
+                    </div>
+                </div>
+                
+                <p class="font-fraunces font-base text-[20px] pt-4">Check-in from 15:00</p>
+
+                <p class="font-mono font-thin text-[10px] py-2">Sat - 25 April</p>
+
+                <p class="w-[95%] font-mono text-[10px]">Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+
+            </div>
+
+            <div class="w-80 flex flex-col bg-[var(--color-white)]">
+                <div class="flex items-center">
+                    <img src="./images/icon-wifi.svg" alt="house" class="w-[40px] bg-[var(--color-blue)] p-1 rounded">
+                    <p class="font-mono font-mono text-[var(--color-blue)] text-[12px] uppercase ps-2 tracking-wider">wifi</p>
+                    <div class="ms-auto">
+                        <p class="text-[var(--color-blue)] text-[20px]">01</p>
+                    </div>
+                </div>
+
+                <p class="font-fraunces font-base text-[20px] pt-4">Le Soleil • Guest</p>
+
+                <p class="font-mono font-thin text-[10px] py-2">Password below</p>
+
+                <div class="flex justify-between">
+                    <p class="font-mono font-thin uppercase tracking-wider text-[12px]">network</p>
+                    <p class="font-mono font-thiner text-[10px]">Le Soleil • Guest</p>
+                </div>
+
+                <div class="flex justify-between">
+                    <p class="font-mono font-thin uppercase tracking-wider text-[12px]">password</p>
+                    <div class="flex flex-row ms-auto">
+                        <p class="font-mono font-thiner text-[10px] pe-4">soleil-2026</p>
+                        <button class="font-mono font-thin uppercase text-[12px] cursor-pointer">copy</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-80 flex flex-col bg-[var(--color-white)]">
+                <div class="flex items-center">
+                    <img src="./images/icon-breakfast.svg" alt="house" class="w-[40px] bg-[var(--color-terracotta)] p-1 rounded">
+                    <p class="font-mono font-mono text-[var(--color-terracotta)] text-[12px] uppercase ps-2 tracking-wider">breakfast</p>
+                    <div class="ms-auto">
+                        <p class="text-[var(--color-terracotta)] text-[20px]">01</p>
+                    </div>
+                </div>
+
+                <p class="font-fraunces font-base text-[20px] pt-4">Served 8 - 10:30</p>
+
+                <p class="font-mono font-thin text-[10px] py-2">On the terrace</p>
+
+                <p class="w-[95%] font-mono text-[10px]">Fresh figs. Marseille honey. pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+
+            </div>
         </div>
 
     </div>
