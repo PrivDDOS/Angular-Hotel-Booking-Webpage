@@ -9,4 +9,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('hotel-booking');
+
+  isClick = false;
+
+  burgerMenu(): void {
+    this.isClick = !this.isClick
+  }
 }
