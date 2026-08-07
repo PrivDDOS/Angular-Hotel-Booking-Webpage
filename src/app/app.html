@@ -8,11 +8,14 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <main class="w-full min-h-screen overflow-x-hidden flex md:flex-row flex-col">
+
+    <!-- Navbar -->
     <div class="relative w-full h-25 md:w-[15%] md:h-auto flex md:flex-col flex-row pt-4 pl-6 pb-3">
         <div class="flex">
             <img src="./images/logo.svg" alt="logo" class="w-25 md:w-[50%]">
         </div>
-        <div class="hidden absolute md:static md:flex md:flex-col pt-6 w-full color-[var(--color-brown)]">
+        <!-- Desktop menu -->
+        <div class="hidden md:flex md:flex-col pt-6 w-full text-[var(--color-brown)]">
             <button class="flex w-full cursor-pointer hover:border-2 hover:rounded-xl hover:border-[var(--color-terracotta)] p-2">
                 <img src="./images/icon-bed.svg" alt="icon-bed">
                 <p class="pl-3 font-semibold text-xs">Your stay</p>
@@ -50,17 +53,7 @@
             </button>
         </div>
 
-        <div class="md:hidden flex ms-auto pe-6">
-            <button (click)="burgerMenu()" type="button">
-                @if (!isClick) {
-                    <img src="./images/icon-menu.svg" alt="burger menu" class="cursor-pointer">
-                } @else {
-                    <img src="./images/icon-close.svg" alt="close menu" class="cursor-pointer">
-                }
-            </button>
-        </div>
-
-        <div class="hidden absolute md:static md:flex md:flex-col mt-auto ms-auto">
+        <div class="hidden md:flex md:flex-col mt-auto ms-auto">
             <div class="flex w-[100%] h-full bg-[var(--color-yellow)] rounded-xl mb-[20px] overflow-hidden py-3 ps-2">
                 <div class="flex flex-col w-[70%] mt-2">
                     <p class="font-thin text-xs uppercase">Today in Cassis</p>
@@ -78,8 +71,58 @@
                 <p class="uppercase font-thin text-xs">© 2026 Maison Soleil</p>
             </div>
         </div>
-    </div>
 
+        <!-- Mobile menu -->
+        <div class="md:hidden flex ms-auto pe-6">
+            <button 
+            (click)="burgerMenu()" 
+            type="button"
+            aria-controls="burger-menu" 
+            [aria-expanded]="isClick"
+            >
+                @if (!isClick) {
+                    <img src="./images/icon-menu.svg" alt="burger menu" class="cursor-pointer">
+                } @else {
+                    <img src="./images/icon-close.svg" alt="close menu" class="cursor-pointer">
+                }
+            </button>
+        </div>
+
+        <div 
+        id="burger-menu" 
+        class="md:hidden absolute flex flex-col pt-6 w-full min-h-full top-20 z-[99] transition-all duration-300 ease-in-out text-[var(--color-brown)] bg-[var(--color-white)]"
+        [ngClass]="{'block': isClick, 'hidden': !isClick}">
+            <button class="flex w-full cursor-pointer hover:border-2 hover:rounded-xl hover:border-[var(--color-terracotta)] p-2">
+                <img src="./images/icon-bed.svg" alt="icon-bed">
+                <p class="pl-3 font-semibold text-xs">Your stay</p>
+                <div class="bg-[var(--color-terracotta)] text-[var(--color-white)] rounded-full ml-auto w-[23px]">
+                    1
+                </div>
+            </button>
+            <button class="flex w-full mt-2 cursor-pointer hover:border-2 hover:rounded-xl hover:border-[var(--color-terracotta)] p-2">
+                <img src="./images/icon-house.svg" alt="icon-house">
+                <p class="pl-3 font-semibold text-xs">The house</p>
+            </button>
+            <button class="flex w-full mt-2 cursor-pointer hover:border-2 hover:rounded-xl hover:border-[var(--color-terracotta)] p-2">
+                <img src="./images/icon-pin.svg" alt="icon-pin">
+                <p class="pl-3 font-semibold text-xs">Around town</p>
+            </button>
+            <button class="flex w-full mt-2 cursor-pointer hover:border-2 hover:rounded-xl hover:border-[var(--color-terracotta)] p-2">
+                <img src="./images/icon-breakfast-outline.svg" alt="icon-breakfast">
+                <p class="pl-3 font-semibold text-xs">Breakfast</p>
+            </button>
+            <button class="flex w-full mt-2 cursor-pointer hover:border-2 hover:rounded-xl hover:border-[var(--color-terracotta)] p-2">
+                <img src="./images/icon-mail.svg" alt="icon-mail">
+                <p class="pl-3 font-semibold text-xs">Messages</p>
+            </button>
+            
+            
+
+        </div>
+
+    </div>
+    
+    <!-- Content -->
     <div class="w-full md:w-[85%] flex flex-col px-[30px] md:px-14 pt-4">
 
         <div class="flex flex-col">
