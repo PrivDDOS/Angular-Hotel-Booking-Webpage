@@ -305,8 +305,14 @@
                 <div class="flex justify-between">
                     <p class="font-mono font-thin uppercase tracking-wider text-[12px]">password</p>
                     <div class="flex flex-row ms-auto">
-                        <p class="font-mono font-thiner text-[10px] pe-4">soleil-2026</p>
-                        <button class="font-mono font-thin uppercase text-[12px] cursor-pointer">copy</button>
+                        <p 
+                        class="font-mono font-thiner text-[10px] pe-4"
+                        #password>{{ passwordCopy }}</p>
+                        <button 
+                        class="font-mono font-thin uppercase text-[12px] cursor-pointer"
+                        [cdkCopyToClipboard]="password.innerText">
+                        copy
+                        </button>
                     </div>
                 </div>
 
